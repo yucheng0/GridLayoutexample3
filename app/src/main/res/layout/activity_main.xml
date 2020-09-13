@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            app:columnCount="5"
+            app:rowCount="2"
+            app:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                android:text="1" />
+
+            <Button
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                android:text="2" />
+
+            <Button
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                android:text="3" />
+
+            <Button
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                android:text="-" />
+
+            <Button
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="2"
+                app:layout_gravity="fill_vertical"
+                android:text="=" />
+
+            <Button
+                app:layout_columnSpan="2"
+                app:layout_rowSpan="1"
+                app:layout_gravity="fill_horizontal"
+                android:text="0" />
+
+            <Button
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                android:text="." />
+
+            <Button
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                android:text="+" />
+
+            <Space
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                android:text="-" />
+
+            <Space
+                app:layout_columnSpan="1"
+                app:layout_rowSpan="1"
+                android:text="=" />
+
+     </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
